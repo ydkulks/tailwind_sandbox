@@ -1,0 +1,23 @@
+{
+  "name": "tailwindcli",
+  "version": "1.0.0",
+  "description": "Tailwind CLI sandbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js && npx tailwindcss -i ./src/input.css -o ./public/output.css --watch",
+    "dev": "node index.js",
+		"tailwind":"npx tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+  },
+  "keywords": [
+    "tailwind"
+  ],
+  "author": "github.com/ydkulks",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

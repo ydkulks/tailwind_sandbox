@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Sandbox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-zinc-200 dark:bg-zinc-900">
+    <h2 class="text-center text-zinc-800 text-2xl font-bold dark:text-zinc-200">
+      Tailwind Sandbox
+    </h2>
+    <button
+      onclick="darkMode()"
+      class="underline text-zinc-500 hover:text-sky-500 dark:text-zinc-300 dark:hover:text-sky-500"
+    >
+      Dark Mode
+    </button>
+    <button
+      onclick="lightMode()"
+      class="underline text-zinc-500 hover:text-sky-500 dark:text-zinc-300 dark:hover:text-sky-500"
+    >
+      Light Mode
+    </button>
+    <div class="mx-20 flex flex-wrap justify-center">
+      <div class="m-2 p-10 rounded-lg bg-slate-300 dark:bg-slate-800">
+        <svg
+          class="text-sky-500 stroke-sky-500"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="M14.287.303a1 1 0 1 1 1.415 1.414l-.707.708L13.58 1.01l.707-.707Zm0 2.829l-6.873 6.873H6V8.59l6.873-6.874l1.415 1.415ZM3 13.5a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h6.25a.75.75 0 0 0 0-1.5H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6.75a.75.75 0 0 0-1.5 0V13a.5.5 0 0 1-.5.5H3Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <h4 class="text-slate-800 text-xl dark:text-slate-200">
+          Writes Upside-Down
+        </h4>
+        <p class="text-slate-500 dark:text-slate-400">
+          The Zero Gravity Pen can be used to write in any orientation,
+          including upside-down. It even works in outer space.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
