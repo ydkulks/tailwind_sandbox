@@ -8,14 +8,14 @@ style the webpages by importing the file that TailwindCLI has created as output
 ## Example file structure
 
 ```terminal
-┠─ public
+┠─ 📁 public/
 ┃  ┠─ index.html
 ┃  ┠─ script.js
-┃  ┠─ output.css
-┠─ src
-┃  ┠─ input.css
+┃  ┖─ output.css
+┠─ 📁 src/
+┃  ┖─ input.css
 ┠─ tailwind.config.js
-┠─ index.js
+┖─ index.js
 ```
 
 ## Step 1 : Install Tailwind CSS
